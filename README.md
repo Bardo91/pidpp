@@ -1,2 +1,2 @@
 # pidpp
-Cross-platform c++20 compatible PID implementation
+Cross-platform c++ compatible PID implementation
