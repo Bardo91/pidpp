@@ -1,0 +1,6 @@
+get_filename_component(pidpp_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET pidpp::pidpp)
+    include("${pidpp_CMAKE_DIR}/pidppTargets.cmake")
+endif()
