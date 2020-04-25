@@ -27,14 +27,13 @@
 #include <cmath>
 #include <Eigen/Eigen>
 
-#include <cmath>
 
 namespace pidpp{
 
     float PID::EuclideanDistance(float _a, float _b) { return _b - _a; };
     float PID::AngularDistance(float _a, float _b){
-        Eigen::Vector3f v1 = {cos(_a), sin(_a), 0};
-        Eigen::Vector3f v2 = {cos(_b), sin(_b), 0};
+        Eigen::Vector3f v1 = {(float)cos(_a), (float)sin(_a), 0};
+        Eigen::Vector3f v2 = {(float)cos(_b), (float)sin(_b), 0};
         auto v3 = v1.cross(v2);
         float magn = acos(v1.dot(v2));
         float angle = v3[2];
