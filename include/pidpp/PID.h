@@ -20,8 +20,8 @@
 //---------------------------------------------------------------------------------------------------------------------
 
 
-#ifndef AEROXSUITE_CONTROL_PID_H_
-#define AEROXSUITE_CONTROL_PID_H_
+#ifndef PIDPP_PID_H_
+#define PIDPP_PID_H_
 
 
 #include <limits>
